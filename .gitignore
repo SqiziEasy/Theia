@@ -1,0 +1,17 @@
+/Builds/
+/build/
+/bin/
+/Debug/
+/Release/
+*.jucer_backup
+*.user
+*.exe
+*.dll
+*.app
+*.dSYM
+*.o
+*.obj
+*.so
+*.a
+*.dylib
+*.log

@@ -1,0 +1,17 @@
+name: Build Windows
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build Windows
+    timeout-minutes: 40
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Run script"
+        run: ./ci/build.sh
+        shell: bash
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Windows
+          path: bin
